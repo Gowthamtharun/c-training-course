@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int sal,hos,bank,sav,self,tot;
+    cin>>sal>>hos>>bank>>sav>>self;
+    tot=(hos+bank+sav+self);
+    if(tot>sal)
+    {
+        cout<<"He wants to work hard";
+    }
+    else 
+    {
+        cout<<"He can save the money";
+    }
+    return 0;
+}
