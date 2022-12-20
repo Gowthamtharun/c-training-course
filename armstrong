@@ -1,0 +1,31 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int n,c,x,an,am;
+    cin>>n;
+    while(n!=0)
+    {
+        x=n%10;
+        if(n!=0)
+        {
+            c++;
+        }
+        n=n/10;
+    }
+    for(int i=1;i<=c;i++)
+    {
+        x=n%10;
+        n=n/10;
+        am=pow(x,n);
+        an=an+am;
+    }
+    if(n==an)
+    {
+        cout<<"Armstrong Number"<<" ";
+    }
+    else{
+        cout<<"Not an Armstrong Number";
+    }
+}
